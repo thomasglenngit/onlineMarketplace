@@ -1,6 +1,10 @@
 $(document).ready(function(){
   $("#formShop").submit(function(event) {
   event.preventDefault();
+  const firstName = $("input#firstName").val();
+  const lastName = $("input#lastName").val();
+  const loyaltyNumber = $("input#loyaltyNumber").val();
+  
 }
 
 $(document).ready(function() {
