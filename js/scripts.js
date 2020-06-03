@@ -4,27 +4,17 @@ $(document).ready(function(){
   const firstName = $("input#firstName").val();
   const lastName = $("input#lastName").val();
   const loyaltyNumber = $("input#loyaltyNumber").val();
-  
-}
+  const superhero = $("#superhero").val();
+  const size = $("input:radio[name=size]:checked").val();
 
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    const person1Input = $("input#person1").val();
-    const person2Input = $("input#person2").val();
-    const animalInput= $("input#animal").val();
-    const exclamationInput = $("input#exclamation").val();
-    const verbInput = $("input#verb").val();
-    const nounInput = $("input#noun").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+  $(".firstName").text(firstName);
+  $(".lastName").text(lastName);
+  $(".loyaltyNumber").text(loyaltyNumber);
+  $(".superhero").text(superhero);
+  $(".size").text(size);
 
-    $("#story").show();
 
-    event.preventDefault();
+    $("#output").show();
   });
 });
